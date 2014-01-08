@@ -1,6 +1,6 @@
 # Ng-Fluidvids
 
-Ng-Fluidvids allow you to embed a fluid videos from any provider has Youtube, Daylimotion, Vimeo, ... .
+Ng-Fluidvids allows you to embed a fluid videos from any provider such as Youtube, Daylimotion, Vimeo, ... .
 
 ## Goals
 
