@@ -1,6 +1,6 @@
-var ngFluidVids = angular.module('myApp', []);
+angular.module('fluidVids', [])
 
-ngFluidVids.config(function($sceDelegateProvider) {
+.config(function($sceDelegateProvider) {
     // The whitelist set specific ressources origin to be allowed
     $sceDelegateProvider.resourceUrlWhitelist([
         // Allow same origin resource loads.
@@ -16,9 +16,9 @@ ngFluidVids.config(function($sceDelegateProvider) {
 
     // The blacklist set specific ressources origin to be denied
     $sceDelegateProvider.resourceUrlBlacklist([]);
-});
+})
 
-ngFluidVids.directive('fluidvids', function($sce) {
+.directive('fluidvids', function($sce) {
     return {
         // ‘A’ – Attribute (You want to use your directive as <div rating>)
         // ‘E’ – Element (Use it as <rating>) Olders browser doesn't support custom tag elements
