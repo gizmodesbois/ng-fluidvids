@@ -1682,12 +1682,14 @@
                 "Content-Type": "application/json;charset=utf-8"
             }, e = this.defaults = {
                 transformResponse: [
+
                     function(d) {
                         D(d) && (d = d.replace(c, ""), b.test(d) && a.test(d) && (d = Ub(d)));
                         return d
                     }
                 ],
                 transformRequest: [
+
                     function(a) {
                         return X(a) && "[object File]" !== Za.call(a) ? pa(a) : a
                     }
@@ -1742,6 +1744,7 @@
                     d.method = Ga(d.method);
                     (a = Fb(d.url) ? b.cookies()[d.xsrfCookieName || e.xsrfCookieName] : r) && (g[d.xsrfHeaderName || e.xsrfHeaderName] = a);
                     var f = [
+
                         function(a) {
                             g = a.headers;
                             var b = nc(a.data, mc(g), a.transformRequest);
@@ -5028,6 +5031,7 @@
             }
         }),
         oe = [
+
             function() {
                 return {
                     scope: !0,
